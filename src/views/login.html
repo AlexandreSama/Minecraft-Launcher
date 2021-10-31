@@ -28,14 +28,14 @@
 		      	<h3 class="mb-4 text-center">Tu a un compte Minecraft?</h3>
 		      	<form action="#" class="signin-form">
 		      		<div class="form-group">
-		      			<input type="text" class="form-control" placeholder="Email" required>
+		      			<input type="text" class="form-control" placeholder="Email" required id="emailInput">
 		      		</div>
 	            <div class="form-group">
 	              <input id="password-field" type="password" class="form-control" placeholder="Mot de passe" required>
 	              <span toggle="#password-field" class="fa fa-fw fa-eye field-icon toggle-password"></span>
 	            </div>
 	            <div class="form-group">
-	            	<button type="submit" class="form-control btn btn-primary submit px-3">Connexion</button>
+	            	<button type="submit" class="form-control btn btn-primary submit px-3" id="loginBtn">Connexion</button>
 	            </div>
 	            <div class="form-group d-md-flex">
 	            	<div class="w-50">
@@ -60,7 +60,7 @@
 		</div>
 	</section>
 
-	<script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+	<script>window.$ = window.jQuery = require('jquery');</script>
     <script src="../assets/js/popper.js"></script>
     <script src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../assets/js/main.js"></script>
