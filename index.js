@@ -50,6 +50,7 @@ ipcMain.on('page-load', (event) => {
 
 ipcMain.on('login', (event, data) => {
     Authenticator.getAuth(data.email, data.password).then(e => {
+      console.log(e)
       mainWindow.loadURL(`file://${__dirname}/src/views/app.html`)
     }).catch(err => {
       event.sender.send('Error-Login')
